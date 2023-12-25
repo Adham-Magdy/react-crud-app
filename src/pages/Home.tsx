@@ -80,9 +80,12 @@ const Home = () => {
                         {data.phone}
                       </td>
                       <td className="flex items-center justify-center space-x-4 mt-1">
-                        <button className=" bg-green-700 px-4 py-2 rounded-lg text-white font-normal">
-                          Edit
-                        </button>
+                        <Link
+                            to={`/edit-user/${data.id}`}
+                            className="bg-blue-600 text-white px-6 py-2 rounded-lg"
+                          >
+                            Edit
+                          </Link>
                         <Link to={`/users/${data.id}`} className=" bg-black px-4 py-2 rounded-lg text-white font-normal">
                           View
                         </Link>
