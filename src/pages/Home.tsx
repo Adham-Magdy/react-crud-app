@@ -86,12 +86,15 @@ const Home = () => {
                         <Link to={`/users/${data.id}`} className=" bg-black px-4 py-2 rounded-lg text-white font-normal">
                           View
                         </Link>
-                        <button  className="  bg-red-600 px-4 py-2 rounded-lg text-white font-normal">
-                          Delete
-                        </button>
+                          <Link
+                            onClick={()=>deleteUser(data.id)}
+                            to={"#"}
+                            className="bg-red-600 text-white px-6 py-2 rounded-lg"
+                          >
+                            Delete
+                          </Link>
                       </td>
                     </tr>
-
                       ))
                     }
                    
